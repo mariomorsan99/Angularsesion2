@@ -1,0 +1,11 @@
+<div class="card-group animated fadeIn slow ">
+    <div class="card" *ngFor="let itemProducto of productos; let indice=index" style="width: 80rem;">
+        <img [src]="itemProducto.imagenProducto" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{itemProducto.nombreProducto}}</h5>
+            <p class="card-text">{{itemProducto.descripcionProducto}}</p>
+            <p class="card-text">{{itemProducto.precioProducto}}</p>
+            <button type="button" (click)="VerProductos(indice)" class="btn btn-success">Success</button>
+        </div>
+    </div>
+</div>
